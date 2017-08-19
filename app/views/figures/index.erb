@@ -1,7 +1,8 @@
 <p><h3>List of all figures</h3></p>
 
 <% @figures.each do |figure| %>
-  <% link = '/figures/' + figure.slug %>
+  <% id_string = figure.id.to_s %>
+  <% link = '/figures/' + id_string %>
   <a href="<%= link %>">
   <%= figure.name %>
   </a>
